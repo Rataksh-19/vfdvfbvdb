@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نيفر لاند</title>
+    <style>
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* ملء الصفحة بالكامل */
+            display: flex;
+            justify-content: center; /* محاذاة العناصر أفقيا في المنتصف */
+            align-items: center; /* محاذاة العناصر عموديا في المنتصف */
+            background-image: url('https://th.bing.com/th/id/OIP.oBA6wh-phB4ruoPpYdnY8QHaDe?rs=1&pid=ImgDetMain'); /* الخلفية بالصورة */
+            background-size: cover; /* جعل الصورة تغطي كامل الشاشة */
+            background-position: center; /* محاذاة الصورة في المنتصف */
+            background-repeat: no-repeat; /* عدم تكرار الصورة */
+            animation: moveBackground 10s linear infinite; /* جعل الخلفية تتحرك */
+            flex-direction: column; /* ترتيب العناصر عموديًا */
+            text-align: center; /* محاذاة النصوص في الوسط */
+        }
+
+        /* تأثير حركة الخلفية */
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        h1 {
+            font-size: 48px; /* حجم الخط */
+            color: #fff; /* لون الخط أبيض ليظهر على الخلفية */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            background-color: #000; /* لون الزر أسود */
+            color: #fff; /* لون النص أبيض */
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #444; /* لون الزر عند التمرير عليه */
+        }
+
+        /* تنسيق النص تحت الزر */
+        .developer {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #fff; /* لون النص أبيض */
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Studio Never</h1>
+
+    <div class="button-container">
+        <button onclick="window.location.href='https://discord.gg/qGGMvECY'">
+            انضم إلينا على Discord
+        </button>
+    </div>
+
+    <div class="developer">
+        المطور 𝒷ℓ𝒶𝒸𝓀ッ
+    </div>
+
+</body>
+</html>
